@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little heroes</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="header">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a class="main-nav-link" href="#shop"> </a></li>
+                    <li>
+                    <li><a class="main-nav-link" href="#shop">Магазин</a></li>
+                    <li>
+                        <a class="main-nav-link" href="#testimonials">Отзиви</a>
+                    </li>
+                    <li><a class="main-nav-link nav-cta" href="#cta">Контакти</a></li>
+                </ul>
+
+            </nav>
+            <script>
+                window.onscroll = function () { myFunction() };
+
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">
+                        <span>Little Heroes</span> - Grooming salon
+                    </h1>
+                    <p class="hero-description">
+                        СПА грижата, която заслужава Вашето куче
+                    </p>
+                    <a href="#cta" class="btn btn--full margin-right-sm">Направете запитване</a>
+
+
+                    <div class="delivered-products">
+                        <div class="delivered-imgs">
+                            <img src="img/customers/img2.jpg" alt="Customer photo" />
+                            <img src="img/customers/img3.jpg" alt="Customer photo" />
+                            <img src="img/customers/img4.jpg" alt="Customer photo" />
+                        </div>
+                        <p class="delivered-text">
+                            <span>над 1 000 </span>доволни клиенти
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-img-box">
+
+                    <img src="img/hero.jpg" class="hero-img" alt="chair" />
+
+                </div>
+            </div>
+        </section>
+        <!--       wooow shop-->
+        <section class="shop-section" id="shop">
+            <section class="section-products">
+                <div class="container grid grid--3-cols">
+                    <figure class="product">
+                        <img src="img/prod1.jpg" class="product-img" alt="дрешки" />
+                        <div class="product-content">
+                            <div class="product-tags">
+                                <span class="tag tag--size">различни размери</span>
+                            </div>
+                            <p class="product-title">Дрехи</p>
+                            <ul class="product-attribute">
+                                <li class="product-attribute">
+
+                                    <span>Страхотен дизайн</span>
+                                </li>
+                                <li class="product-attribute">
+
+
+                                    <span>Налични модели</span>
+                                </li>
+                                <li class="product-attribute">
+
+
+                                    <span>Свежи цветове</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                    <figure class="product">
+                        <img src="img/prod2.jpg" class="product-img" alt="basic product" />
+                        <div class="product-content">
+                            <div class="product-tags">
+                                <span class="tag tag--size">различни размери</span>
+                            </div>
+                            <p class="product-title">Нашийници и бандани</p>
+                            <ul class="product-attribute">
+                                <li class="product-attribute">
+
+
+                                    <span>Страхотен дизайн</span>
+                                </li>
+                                <li class="product-attribute">
+
+
+                                    <span>Налични модели</span>
+                                </li>
+                                <li class="product-attribute">
+
+
+                                    <span>Свежи цветове</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                    <figure class="product">
+                        <img src="img/prod3.jpg" class="product-img" alt="basic product" />
+                        <div class="product-content">
+                            <div class="product-tags">
+                                <span class="tag tag--scent">различни аромати</span>
+                            </div>
+                            <p class="product-title">Козметични продукти</p>
+                            <ul class="product-attribute">
+                                <li class="product-attribute">
+                                    <span>За чувствителна кожа</span>
+                                </li>
+                                <li class="product-attribute">
+                                    <span>Наличности</span>
+                                </li>
+                                <li class="product-attribute">
+                                    <span>Избор по каталог</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </section>
+
+        <section class="section-cta" id="cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-img-box" role="img" aria-label="Inna"></div>
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">Контакти</h2>
+                        <p class="cta-text">
+                            Свържете се с нас за повече информация относно предлаганите услуги на телефон <strong>089
+                                376 3491</strong>
+                            или направете запитване чрез формата за контакти:
+                        </p>
+
+                        <form class="cta-form">
+                            <div>
+                                <label for="full-name">Вашето име</label>
+                                <input id="full-name" type="text" placeholder="име и фамилия" name="full-name"
+                                    required />
+                            </div>
+
+                            <div>
+                                <label for="email">Email address</label>
+                                <input id="email" type="email" placeholder="example@mail.com" name="email" />
+                            </div>
+
+                            <div>
+                                <label for="select-where">Услуга:</label>
+                                <select id="select-where" name="select-where" required>
+                                    <option value="">Посочете:</option>
+                                    <option value=1>Подстригване</option>
+                                    <option value=2>Къпане и изсушаване</option>
+                                    <option value=3>Изрязване на нокти</option>
+                                    <option value=4>Разресване</option>
+                                    <option value=5>Почистване на уши</option>
+                                    <option value=6>Сваляне на мъртва козина и подкосъм</option>
+                                    <option value=7>Всички изброени</option>
+
+                                </select>
+                            </div>
+                            <div>
+                                <label for="select-where">Размери на кучето</label>
+                                <select id="select-where" name="select-where" required>
+                                    <option value="">Посочете:</option>
+                                    <option value=1>1-7кг</option>
+                                    <option value=2>8-15кг</option>
+                                    <option value=3>16-25кг</option>
+                                    <option value=4>26-40кг</option>
+                                    <option value=5>41-80кг</option>
+
+                                </select>
+                            </div>
+
+                            <button class="btn btn--form">Изпрати запитване</button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <h2>Отзиви</h2>
+
+    <section class="testimonials-section" id="testimonials">
+
+
+        <div class="containert">
+            <img src="img/customers/customer-1.jpg" alt="customer" style="width:90px">
+            <p><span>Д.В.</span> </p>
+            <p>Препоръчвам с две ръце. Много мили и много бързи. Справиха се идеално с подстрижката на своенравното ни
+                йорки
+                😊. Благодарим!</p>
+        </div>
+
+        <div class="containert">
+            <img src="img/customers/customer-2.jpg" alt="customer" style="width:90px">
+            <p><span>Н.Л.</span></p>
+            <p>Страшно съм доволен,възхитен съм!
+                След професионалната намеса и прическата на нашия пудел.
+                Стана като "манекен"!🙂❤</p>
+        </div>
+
+
+        <div class="containert">
+            <img src="img/customers/customer-3.jpg" alt="customer" style="width:90px">
+            <p><span>K.Х.</span></p>
+            <p>Сърдечно препоръчвам! Много професионално и топло отношение! Дори и за г-н Драма-тикос не беше травмиращо
+                преживяване (🙂</p>
+        </div>
+
+    </section>
+
+</body>
+<footer>
+    &copy; 2023 <adress> Sofia, Bulgaria </adress>
+</footer>
+</body>
+
+</html>
